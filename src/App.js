@@ -7,9 +7,11 @@ const students=[
   {name:' Litondas',division:'Economics',id:52459},
   {name:' Polas Hosain',division:'Bangla',id:52457},
 ]
+
 function App() {
   return (
     <div className="App">
+      <h1>Card Designer</h1>
       {   
        students.map(student=><Student name={student.name} division={student.division} id={student.id}></Student>)
      }
